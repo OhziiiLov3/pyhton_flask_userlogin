@@ -11,6 +11,7 @@ $('form[name=signup_form').submit(function(e) {
         dataType: "json",
         success: function(res){
             console.log(res);
+            window.location.href = "/dashboard/";
         },
         error: function(res) {
             console.log(res);
