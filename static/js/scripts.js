@@ -14,6 +14,7 @@ $('form[name=signup_form').submit(function(e) {
         },
         error: function(res) {
             console.log(res);
+            $error.text(res.responseJSON.error).removeClass('error--hidden');
         }
     });
 
